@@ -1,5 +1,14 @@
+:root {
+    --primary-color: #0D6EFD; /* Techy blue */
+    --secondary-color: #212529; /* Dark background gray */
+    --accent-color: #6C757D; /* Soft gray for highlights */
+    --text-color: #F8F9FA; /* Off-white for text */
+}
+
 /* Styling for the entire body of the HTML document */
 body {
+    background-color: var(--secondary-color); /* Dark background */
+    color: var(--text-color); /* Off-white text */
     font-family: Arial, sans-serif; /* Set the font family for the entire document */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -8,8 +17,8 @@ body {
 
 /* Styling for the header section */
 header {
-    background-color: #333; /* Set background color */
-    color: white; /* Set text color */
+    background-color: var(--primary-color); /* Set background color to techy blue */
+    color: var(--text-color); /* Off-white text */
     padding: 1em 0; /* Set padding for top and bottom */
     text-align: center; /* Center align text */
 }
@@ -26,9 +35,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Set link color */
+    color: var(--primary-color); /* Techy blue links */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Set font weight for links */
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+    color: var(--accent-color); /* Soft gray for hover effect */
 }
 
 /* Styling for sections in the document */
@@ -39,6 +53,7 @@ section {
 
 h1 {
     margin-bottom: 1em; /* Set margin at the bottom of h1 elements */
+    color: var(--text-color); /* Use off-white for headings */
 }
 
 ul {
@@ -60,15 +75,15 @@ ul {
     width: 300px; /* Set width */
     height: 200px; /* Set height */
     overflow: hidden; /* Hide overflow content */
-    border-radius: 15px; /* Added to round the corners of the project containers */
-    border: 2px solid #333; /* Add border style */
+    border-radius: 15px; /* Round the corners */
+    border: 2px solid var(--primary-color); /* Border in techy blue */
 }
 
 .project img {
     width: 100%; /* Set image width */
     height: 100%; /* Set image height */
     object-fit: cover; /* Scale images to cover container */
-    border-radius: 15px; /* Added to round the corners of the images */
+    border-radius: 15px; /* Round the corners */
 }
 
 /* Styling for overlay on hover */
@@ -79,13 +94,13 @@ ul {
     width: 100%; /* Take full width */
     height: 100%; /* Take full height */
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white; /* Text color */
+    color: var(--text-color); /* Off-white text */
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center align horizontally */
     align-items: center; /* Center align vertically */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s; /* Add transition effect */
-    border-radius: 15px; /* Added to round the corners of the overlay */
+    border-radius: 15px; /* Round the corners */
 }
 
 /* Show overlay on project hover */
@@ -95,17 +110,19 @@ ul {
 
 /* Styling for buttons */
 .button {
-    background-color: #333; /* Set background color */
-    color: white; /* Set text color */
+    background-color: var(--primary-color); /* Bright blue button */
+    color: var(--text-color); /* Off-white text */
     padding: 0.5em 1em; /* Set padding */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Set font weight */
     transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Pointer on hover */
 }
 
 .button:hover {
-    background-color: #555; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
+    background-color: var(--accent-color); /* Soft gray on hover */
+    color: var(--text-color); /* Maintain off-white text */
 }
 
 /* Styling for forms */
@@ -114,7 +131,7 @@ form {
     margin: 0 auto; /* Center align horizontally */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items in a column */
-    border: 3px solid #333; /* Add border style */
+    border: 3px solid var(--primary-color); /* Add border in techy blue */
     padding: 20px; /* Add padding for spacing */
 }
 
@@ -133,16 +150,16 @@ input, textarea {
 button {
     padding: 1em; /* Set padding for button */
     font-size: 1em; /* Set font size */
-    background-color: #333; /* Set background color */
-    color: white; /* Set text color */
+    background-color: var(--primary-color); /* Set background color to techy blue */
+    color: var(--text-color); /* Set text color to off-white */
     border: none; /* Remove border */
     cursor: pointer; /* Set cursor style */
 }
 
 /* Styling for the footer */
 footer {
-    background-color: #333; /* Set background color */
-    color: white; /* Set text color */
+    background-color: var(--primary-color); /* Techy blue background */
+    color: var(--text-color); /* Off-white text */
     text-align: center; /* Center align text */
     padding: 1em 0; /* Set padding for top and bottom */
     position: fixed; /* Fixed positioning */
