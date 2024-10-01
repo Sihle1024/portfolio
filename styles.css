@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--primary-color); /* Techy blue links */
+    color: var(--text-color); /* Techy blue links */
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Set font weight for links */
 }
