@@ -35,14 +35,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--text-color); /* Techy blue links */
-    text-decoration: none; /* Remove underline from links */
+    color: var(--text-color);
     font-weight: bold; /* Set font weight for links */
 }
 
 /* Change color on hover */
 nav ul li a:hover {
-    color: var(--accent-color); /* Soft gray for hover effect */
+    text-decoration: underline; /* Add underline from links */
 }
 
 /* Styling for sections in the document */
