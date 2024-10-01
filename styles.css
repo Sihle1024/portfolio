@@ -36,6 +36,7 @@ nav ul li {
 
 nav ul li a {
     color: var(--text-color);
+    text-decoration: none; /* Add underline from links */
     font-weight: bold; /* Set font weight for links */
 }
 
