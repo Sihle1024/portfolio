@@ -39,7 +39,6 @@ nav ul li a {
     font-weight: bold; /* Set font weight for links */
 }
 
-/* Change color on hover */
 nav ul li a:hover {
     text-decoration: underline; /* Add underline from links */
 }
